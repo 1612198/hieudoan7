@@ -23,7 +23,7 @@ disqusShortname = "yourdiscussshortname"
     avatarurl = "imgs/hieudm.jpg" #current in static of hugo-coder
     footercontent = "Become the BEST VERSION of YOU."
 
-    dateformat = "April 19, 2019"
+    dateformat = "January 02, 2006"
 
     hideCredits = true
     hideCopyright = true
