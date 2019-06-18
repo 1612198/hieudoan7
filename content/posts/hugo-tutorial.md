@@ -1,4 +1,5 @@
 ---
+#yaml
 title: "Hugo Tutorial"
 date: 19-04-19T22:13:37+07:00
 draft: false

@@ -1,4 +1,5 @@
 +++ 
+# toml
 draft = "false"
 date = 2019-06-18T15:01:41+07:00
 title = "Kosaraju's Algorithm Intuition"
@@ -16,6 +17,7 @@ series = []
 ## I. DFS Tree 
 Output của thuật toán DFS là 1 cây khung (spanning tree)
 Tất cả các cạnh của đồ thị gốc sẽ được chia làm 4 loại trong DFS spanning Tree:
+
 + Tree Edge  (sometimes Tree Edge được xếp vào Forward Edge)
 + Forward Edge 
 + Back Edge
