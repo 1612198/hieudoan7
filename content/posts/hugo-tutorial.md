@@ -23,17 +23,13 @@ Về cơ bản, chúng ta host blog lên github sẽ tạo 2 repository
   
 ## II. Post & Deploy
 - Tạo post <br/>
-  ```bash
-   hugo new posts/mypost.md
-   ```
+  `hugo new posts/mypost.md`
 - Chỉnh sửa config toml file `mypost.md`
     + draft = "false"
     + title = "My Title post"
 - Add nội dung bài post dưới phần toml header
 - Chạy trên local host để check:   <br/>
-  ```bash
-  hugo server -w (--watch)
-  ```
+  `hugo server -w (--watch)`
 - Deploy qua `1612198.github.io` để nó render lên web   <br/>
   ```bash
   hugo -d (--deploy) ../1612198.github.io/
