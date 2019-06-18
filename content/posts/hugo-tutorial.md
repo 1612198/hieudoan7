@@ -34,7 +34,10 @@ Về cơ bản, chúng ta host blog lên github sẽ tạo 2 repository
   ```bash
   hugo server -w (--watch)
   ```
-- Deploy qua `1612198.github.io` để nó render lên web
+- Deploy qua `1612198.github.io` để nó render lên web   <br/>
+  ```bash
+  hugo -d (--deploy) ../1612198.github.io/
+  ```
 - Push 2 repo lên github để host là được.   <br/>
   `git config --global user.name "1612198`  <br/>
   `git config --global user.gmail "hieudoan190598@gmail.com"`                <br/>
