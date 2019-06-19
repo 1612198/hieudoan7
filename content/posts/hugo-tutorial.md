@@ -44,4 +44,9 @@ Về cơ bản, chúng ta host blog lên github sẽ tạo 2 repository
   `git push origin master`
 
 
+## III. Hugo Tips
+### 1. Insert Image in Hugo post
+- Bỏ image vào folder static (cùng `config.toml`)
+- Link đường dẫn image trong post (`/imgs/my_image.jpg`) (thư mục gốc `/` là tương đương với `static/`)
+
 
