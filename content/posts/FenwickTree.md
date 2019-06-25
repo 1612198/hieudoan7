@@ -32,6 +32,7 @@ Mục đích cây này là để tính range sum và khi update 1 phần tử tr
         fen[n+1]={0}
    - Coi như ta đang update các phần tử của mảng, a[i] (i in [1..n]) và update vào fen[i] & các parent of (i)
   ** parent(i) = i+ (i&-i)
+
   ```cpp
     void update (int pos, int val){
         while(pos<=n){
