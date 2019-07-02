@@ -13,4 +13,5 @@
       [<a href="{{ .Site.Params.commit }}{{ getenv "GIT_COMMIT_SHA" }}">{{ getenv "GIT_COMMIT_SHA_SHORT" }}</a>]
     {{ end }}
   </section>
+  {{ partial "mathjax_support.html" . }}
 </footer>

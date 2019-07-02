@@ -49,4 +49,46 @@ Về cơ bản, chúng ta host blog lên github sẽ tạo 2 repository
 - Bỏ image vào folder static (cùng `config.toml`)
 - Link đường dẫn image trong post (`/imgs/my_image.jpg`) (thư mục gốc `/` là tương đương với `static/`)
 
+### 2. Xuống dòng
+- 2 dấu cách (giống trên stackoverflow, codeforces)
 
+### 3. Math Expression
+Dùng **MathJax**
+
+- Tạo file `mathjax_support.html` trong `theme/layouts/partials/`  
+ 
+```html
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+  });
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+  });
+
+  MathJax.Hub.Config({
+  // Autonumbering by mathjax
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+  });
+</script>
+```
+- Add file này vào `footer.html` or `header.html` (trước thẻ `</footer>`)  
+  
+```html
+{{ partial "mathjax_support.html" . }}
+```

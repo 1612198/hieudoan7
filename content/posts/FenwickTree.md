@@ -18,9 +18,9 @@ Fenwick Tree (Binary Indexed Tree) là một CTDL với n node (n+1 nodes với 
 <p align = "center">
 ![BITSum](/imgs/BITSum.png)
 </p>
-* Nhận xét: Cây getSum vs cây Update khác nhau:\\
-    - in GetSum: `parent(i) = i-(i&-i)`     \\
-    - in Update: `parent(i) = i+(i&-i)`
+* Nhận xét: Cây getSum vs cây Update khác nhau:  
+    - in GetSum: `parent(i) = i-(i&-i)`  
+    - in Update: `parent(i) = i+(i&-i)`  
 
 ## Mục đích:
 Mục đích cây này là để tính range sum và khi update 1 phần tử trong mảng a thì các range sum involved cũng được update với chi phí thấp. </br>
@@ -28,9 +28,9 @@ Mục đích cây này là để tính range sum và khi update 1 phần tử tr
 
 ## Thao tác
 ### 1. Khởi tạo fenwick[n+1]
-   - Khởi tạo tất cả fen[i] = 0         \\
+   - Khởi tạo tất cả fen[i] = 0  
         fen[n+1]={0}
-   - Coi như ta đang update các phần tử của mảng, a[i] (i in [1..n]) và update vào fen[i] & các parent of (i) \\
+   - Coi như ta đang update các phần tử của mảng, a[i] (i in [1..n]) và update vào fen[i] & các parent of (i)  
   ** parent(i) = i+ (i&-i)
 
   ```cpp
