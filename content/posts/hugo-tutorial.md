@@ -92,3 +92,4 @@ Dùng **MathJax**
 ```html
 {{ partial "mathjax_support.html" . }}
 ```
+Nguồn: https://divadnojnarg.github.io/blog/mathjax/
