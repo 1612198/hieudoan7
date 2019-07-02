@@ -43,8 +43,9 @@ Về cơ bản, chúng ta host blog lên github sẽ tạo 2 repository
   `git commit -m "comment for your commit"`     <br/>
   `git push origin master`
 
-
-## III. Hugo Tips
+## III. Add comment componet
+[awesome guide](https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/) 
+## IV. Hugo Tips
 ### 1. Insert Image in Hugo post
 - Bỏ image vào folder static (cùng `config.toml`)
 - Link đường dẫn image trong post (`/imgs/my_image.jpg`) (thư mục gốc `/` là tương đương với `static/`)
