@@ -53,7 +53,7 @@ But, How to do that?
 - Nếu S[i] là toán tử: xét S[i] vs stack.top()  
     + Nếu S[i] $<=$ stack.top() thì pop() stack ra output cho tới khi S[i] > stack.top() or stack empty or stack.top()=='('  
     + Nếu S[i] > stack.top() thì push vào stack  
-- Trường hợp S[i]='(' thì ra push và Stack, S[i]=')' thì ta cứ pop() cho tới khi pop() luôn thằng '('    
+- Trường hợp S[i]='(' thì ta push vào Stack, S[i]=')' thì ta cứ pop() cho tới khi pop() luôn thằng '('    
 
 ### 2. Tính toán:  
 Từ chuối Balan ngược: RPN = $3\ 5\ 6\ 3 - * + 1 +$  
