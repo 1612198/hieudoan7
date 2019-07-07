@@ -94,3 +94,18 @@ Dùng **MathJax**
 {{ partial "mathjax_support.html" . }}
 ```
 Nguồn: https://divadnojnarg.github.io/blog/mathjax/
+
+### 4. Insert table in hugo blog
+- Tạo table using markdown syntax
+- add css style để full border (2px) and padding 1rem  
+
+```html
+<style>
+    th, td {
+        padding: 1.0rem;
+    }
+    table, th, td {
+      border: 2px solid black;
+    }
+ </style>
+```
