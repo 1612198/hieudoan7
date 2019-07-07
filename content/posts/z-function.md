@@ -18,7 +18,8 @@ series = []
     }
  </style>
 # String Processing
-18/04/2019
+18/04/2019  
+
 Cho 2 xâu P (pattern) và S (string). Mộ số bài toán  
 
 - Tìm vị trí xuất hiện đầu tiên của P trong S
