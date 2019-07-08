@@ -48,6 +48,8 @@ for(int i=1; i<=n-1; i++){
     }
 }
 ```
+$$\Rightarrow O(n*m) $$
+
 Hoàn toàn ta có thể thêm kĩ thuật truy vết để tìm ra các shortest path từ đỉnh $x$ đến $i$.  
 
 ### Kiểm tra mạch âm (Negative Cycle)
