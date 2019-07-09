@@ -14,7 +14,7 @@ series = []
 
 ## I. Mục đích:
 Tìm đường đi ngắn nhất từ **1 node** (starting node) đến **tất cả** các nodes còn lại.  
-**Nhược điểm**: Kết quả **SAI** khi đồ thị có **mạch âm**.  
+**Nhược điểm**: Kết quả **SAI** khi đồ thị **cạnh âm** chứ chưa cần có **mạch âm**.  
 **Ưu điểm**: So với Bellman-ford, Dijistra hiệu quả hơn vì chỉ duyệt qua các cạnh đúng 1 lần.  
 
 ## II. Ý tưởng:
