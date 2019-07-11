@@ -34,7 +34,7 @@ Nên  $$ (a\ \%\ b)\ \%\ x = 0$$.
 Suy ra:  $$gcd(a, b) = gcd(b, a\%b)$$ 
 $$(=x)$$  
 
-***Corner Case:***  
+***Corner Case***  (final recurrence)    
 
 - $ a = 0 $ hoặc $ b = 0 $ thì $\ gcd(a , b) =$ thằng còn lại khác $0$.
 - $ a = 0 $ và $ b = 0 $ thì $\ gcd(0, 0) = 0$ (casio 570VN Plus).  
