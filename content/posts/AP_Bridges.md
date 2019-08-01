@@ -61,6 +61,7 @@ Làm thế nào để ta biết được 1 đỉnh $u$ có phải là khớp hay
 $\Rightarrow $Code: Tao xin copy nguyên source trên trang [cp-algorithm](https://cp-algorithms.com/graph/cutpoints.html) bởi vì nó code quá tuyệt vời.  
 $tin$ = $disc$ (time into node).  
 ```cpp
+const int N = 1e5; //maximum number of vertices
 int n; //number of nodes
 vector<vector<int>> g;
 bool vis[N] = {0}, cutPoint[N] = {0};
