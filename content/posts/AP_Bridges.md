@@ -61,42 +61,36 @@ Làm thế nào để ta biết được 1 đỉnh $u$ có phải là khớp hay
 $\Rightarrow $Code: Tao xin copy nguyên source trên trang [cp-algorithm](https://cp-algorithms.com/graph/cutpoints.html) bởi vì nó code quá tuyệt vời.  
 $tin$ = $disc$ (time into node).  
 ```cpp
-int n; // number of nodes
-vector<vector<int>> adj; // adjacency list of graph
+int n; //number of nodes
+vector<vector<int>> g;
+bool vis[N] = {0}, cutPoint[N] = {0};
+int tin[N], low[N], timer = 0;
 
-vector<bool> visited;
-vector<int> tin, low;
-int timer;
-
-void dfs(int v, int p = -1) {
-    visited[v] = true;
+void dfs(int v, int p = -1){
+    vis[v] = true;
     tin[v] = low[v] = timer++;
-    int children=0;
-    for (int to : adj[v]) {
+    int child = 0;
+    for(auto to : g[v]){
         if (to == p) continue;
-        if (visited[to]) {
-            low[v] = min(low[v], tin[to]);
-        } else {
+        if (!vis[to]){
+            child++;
             dfs(to, v);
             low[v] = min(low[v], low[to]);
-            if (low[to] >= tin[v] && p!=-1)
-                IS_CUTPOINT(v);
-            ++children;
+            if (low[to] >= tin[v] && p != -1)
+                cutPoint[v] = true;
+        } else {
+            low[v] = min(low[v], tin[to]);
         }
     }
-    if(p == -1 && children > 1)
-        IS_CUTPOINT(v);
+    if (p == -1 & child > 1) 
+        cutPoint[v] = true;
 }
-
-void find_cutpoints() {
+void find_cutpoints(){
     timer = 0;
-    visited.assign(n, false);
-    tin.assign(n, -1);
-    low.assign(n, -1);
-    for (int i = 0; i < n; ++i) {
-        if (!visited[i])
-            dfs (i);
-    }
+    memset(vis, 0, sizeof vis);
+    memset(cutPoint, 0, sizeof cutPoint);
+    for (int i=0; i<n; i++)
+        if(!vis[i]) dfs(i);
 }
 ```
 ## III. Finding Bridges
