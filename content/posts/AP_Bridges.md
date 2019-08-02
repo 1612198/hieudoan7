@@ -78,7 +78,7 @@ void dfs(int v, int p = -1){
             dfs(to, v);
             low[v] = min(low[v], low[to]);
             if (low[to] >= tin[v] && p != -1)
-                cutPoint[v] = true;
+                cutPoint[v] = true; //có trùng
         } else {
             low[v] = min(low[v], tin[to]);
         }
@@ -97,7 +97,10 @@ void find_cutpoints(){
 ## III. Finding Bridges
 Hoàn toàn tương tự, chỉ khác ở điều kiện:  
 <center>
-$low[v] > disc[u]$ thay vì $low[v] \geq disc[u]$
+$low[v] > disc[u]$ thay vì $low[v] \geq disc[u]$ và không có chuyện trùng nhau.
+```cpp
+bridge.push_back({a, b}); //ko co trung
+```
 </center>
 
 ### IV. Tham khảo
