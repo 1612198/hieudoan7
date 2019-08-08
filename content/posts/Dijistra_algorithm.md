@@ -58,8 +58,10 @@ Chú ý một vài trick ở cài đặt:
 
 - Dùng $-d$ để tận dụng `default priority_queue` q
 - Vài nét về `priority_queue`:
-    + `priority_queue<int> pq;` //mặc định sắp xếp tăng và top() queue sẽ là $min$. 
-    + `priority_queue<int, vector<int>, greater<int>> pq;`` //sắp xếp giảm và top() queue là $max$.
+    + `priority_queue<int> pq;` //mặc định sắp xếp tăng và top() queue sẽ là $max$. 
+    + `priority_queue<int, vector<int>, greater<int>> pq;`` //sắp xếp giảm và top() queue là $min$.
     + Có thể dùng `multiset<int> mset;` cùng 2 thao tác `insert`, `remove` như 1 `min_priority_queue` (as multiset default)
 
-
+- Nhận xét bên lề: Mặc định của `priority_queue` là phần tử ở `top()` là `max`:
+    + Elements are popped from the *back* of the specific container, which is known as the top of the priority_queue. $(top \rightarrow back)$
+    + Hàm $cmp$ mặc định là $less$, nghĩa là 2 phần tử thỏa thì nó sẽ không swap, để ý là less là mặc định sort tăng đó, khi sort tăng thì thằng `back` (trong priority_queue là `top`) luôn là thằng lớn nhất rồi.
