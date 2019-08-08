@@ -42,7 +42,7 @@ distance[x] = 0;
 q.push({0,x});
 while(!q.empty()){
     int a = q.top().second; q.pop();
-    if (processed[a]) continue;
+    if (processed[a]) continue; //bởi vì cùng dis[a] có thể push nhiều lần và priority_queue thì ko thể remove nên vậy đó.
     processed[a] = true; //có thể có nhiều đỉnh trong pqueue vì do cứ nhỏ hơn là nó push vào thôi mà
     for (auto u : adj[a]){
         int b = u.first, w = u.second;
