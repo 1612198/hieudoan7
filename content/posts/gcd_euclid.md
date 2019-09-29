@@ -16,7 +16,7 @@ series = []
 ```cpp
 typedef long long ll;
 ll gcd (ll a, ll b){
-    return b==0? a : gcd(b, a%b);
+    return b==0? a : gcd(b, a%b); //phải hỏi b==0? chứ b=0 thì làm sao a chia dư 0 được.
 }
 ```
 
