@@ -51,7 +51,8 @@ Mục đích cây này là để tính range sum và khi update 1 phần tử tr
     + Nếu add bit 1 vào sau LSOne(i)
         Thì j - (j&-j) + 1 > i cũng ko contains i, lượng thêm vào nó nhiều hơn lương bớt ra
 
-Chú thích: `LSOne(i)` là giá trị bit 1 trái nhất của i.
+Chú thích: `LSOne(i)` là giá trị bit 1 trái nhất của i. (Least Significant bit)   
+**Củ chuối vl, đọc giải thích + implement trong Handbook ok hơn!!!**
 
 ### 2. Get prefix sum
 ```cpp
