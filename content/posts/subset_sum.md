@@ -90,10 +90,10 @@ $\rightarrow$ Bài toán có thể modify thành bài toán kiểm tra sự tồ
 <u>Bài toán</u>:  
 Cho 1 multiset of integers $S$, the task is divide it into $2$ set $S1$ and $S2$ such that the absolute difference between their sums is minimum.   
 
-$\rightarrow$ Thật ra đây chỉ là bài giống bài trên, ta check xem cái sum nào có thẻ construct gần với mid nhất là ok.  
-<u>Solution</u>
+$\rightarrow$ Thật ra đây chỉ là bài giống bài trên, ta check xem cái $sum$ nào có thể construct gần với $mid$ nhất là ok.  
+<u>Solution</u>  
 Dùng DP như trên, chỉ khác ở bước kết quả, ta duyệt từ mid về trước để tìm cái $dp[n][i] = true$ đầu tiên thôi.  
-<u>Implementation</u>
+<u>Implementation</u>  
 ```cpp
 int n, a[N], sum = 0;
 int all_sum;
