@@ -13,7 +13,7 @@ series = []
 24/06/2019
 
 ## Định nghĩa:
-Fenwick Tree (Binary Indexed Tree) là một CTDL với n node (n+1 nodes với node gốc bù nhìn) chứa thông tin (thường là tổng cộng dồn) về các phần tử trong đoạn `(i-(i&-i), i]` (mảng tính từ 1)
+Fenwick Tree (Binary Indexed Tree) là một CTDL với n node (n+1 nodes với node gốc bù nhìn) chứa thông tin (thường là tổng cộng dồn) về các phần tử trong đoạn `(i-(i&-i), i]` **(mảng tính từ $1$)**
 
 <p align = "center">
 ![BITSum](/imgs/BITSum.png)
