@@ -100,6 +100,7 @@ void update(int node, int st, int en, int L, int R, int v){
         + node i cover [st..en] nằm trong range[L..R]  
     Còn trường hợp partial sẽ tiếp tục recursive để đưa về base case.  
 - Không thể xảy ra $st > en$ bởi vì ta đi từ $0..n-1$ và luôn chia $2$ thì không bao giờ có chuyện đó xảy ra nên khỏi lo.  
+- Trật tự phải là Update node lazy trước rồi làm gì làm sau bởi vì khi node đó đã được gọi thì chứng tỏ thằng cha nó đang chờ kết quả từ nó báo về đề update cho nên dù nó có trong inside, outside hay partial thì update rồi tính sau. (Trong phần comment của HackerEarth có đó).  
 
 ## IV. Trường hợp suy biến của Segment Tree
 Đặc điểm  
