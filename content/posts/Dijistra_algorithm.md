@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2019-07-09T00:06:06+07:00
-title = "Dijikstra Algorithm"
+title = "Dijkstra Algorithm"
 description = ""
 slug = "" 
 tags = []
@@ -9,7 +9,7 @@ categories = []
 externalLink = ""
 series = []
 +++
-# Dijikstra Algorithm
+# Dijkstra Algorithm
 08/07/2019
 
 ## I. Mục đích:
