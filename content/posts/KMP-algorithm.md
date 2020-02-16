@@ -60,7 +60,7 @@ Vậy ta phải tìm được là khi mismatch (or xong pattern) thì ta sẽ tr
 
 ***Xây dựng mảng trượt:***  
 Vì đoạn $T[i:x-1]$ bao giờ cũng $= P[0:x-1]$ nên ta chỉ cần xây dựng bảng
-$lps[i],  \forall i \in [0:m]$ (longest prefix suffix) là nó phủ sóng hết tất cả các trường hợp có thể có của $T[i:x-1]$.  
+$lps[i],  \forall i \in [0:m-1]$ (longest prefix suffix) là nó phủ sóng hết tất cả các trường hợp có thể có của $T[i:x-1]$.  
 
 ## III. Implement
 ### 1. Xây dựng bảng lps[i]
@@ -99,7 +99,7 @@ Thì khi thêm kí tự $P[i]$ vào, chuỗi con dài nhất nó có thể đạ
 Nhưng nếu $P[i] != P[lps[i-1]]$ thì sao, thì có nghĩa là tìm chuỗi con khác vừa là tiền tố vừa là hậu tố của $P[:i]$ (chắc chắn là ngắn hơn len +  1 rồi).   
 
 ***Chuỗi con này tìm như thế nào?***  
-Có phải là vì $lps[i-1] = len$ nên $P[:len] = P[i-len:i-1]$ cho nên chuỗi $lps[i]$ có thể có là $lps[len-1] + 1$ nếu $P[lps[len-1]] == P[i]$. Cứ như vậy thôi.  
+Có phải là vì $lps[i-1] = len$ nên $P[0:len-1] = P[i-len:i-1]$ cho nên chuỗi $lps[i]$ có thể có là $lps[len-1] + 1$ nếu $P[lps[len-1]] == P[i]$. Cứ như vậy thôi.  
 
 Hình vẽ minh họa:  
 <center>
@@ -132,3 +132,6 @@ void KMPSearch(string P, string T){
 }
 ```
 $$\Rightarrow O(n)$$
+
+## IV. Tham khảo:
+[geeks for geeks](https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/)
