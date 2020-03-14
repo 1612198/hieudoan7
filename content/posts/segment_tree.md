@@ -46,7 +46,7 @@ void build(int node, int st, int en) {
         return;
     }
     build(2*node, st, (st+en)/2);
-    build(2*node+1, (st+en)/2, en);
+    build(2*node+1, (st+en)/2+1, en);
     Tree[node] = Tree[2*node] + Tree[2*node+1];
 }
 //2. Hàm get giá trị từ range [L..R]
