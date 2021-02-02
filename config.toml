@@ -1,4 +1,4 @@
-baseurl = "https://1612198.github.io/"
+baseurl = "https://hieudoan7.github.io/"
 title = "hieudoan7"
 
 theme = "hugo-coder"
@@ -13,7 +13,7 @@ pygmentsstyle = "b2"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "1612198"
+disqusShortname = "hieudoan7"
 
 [params]
     author = "hieudoan7"
@@ -49,7 +49,7 @@ disqusShortname = "1612198"
     name = "Github"
     icon = "fab fa-github"
     weight = 1
-    url = "https://github.com/1612198"
+    url = "https://github.com/hieudoan7"
 [[params.social]]
     name = "Gitlab"
     icon = "fab fa-gitlab"
