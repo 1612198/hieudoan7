@@ -16,7 +16,7 @@ title = "Hugo Tutorial"
 Về cơ bản, chúng ta host blog lên github sẽ tạo 2 repository
 
 * Repo 1: hieudoan7: chứa các file config của hugo, content, nói chung tất tần tật.
-* Repo 2: 1612198.github.io: repo này chứa file html để render lên web
+* Repo 2: hieudoan7.github.io: repo này chứa file html để render lên web
 
 **Chú ý**: dateformat trong file config.toml (ở thư mục gốc, thư mục mà ta có thể sử dụng hugo command) phải để ở ngày 2.1.2006 ở bất kỳ format nào (vd: "January 02, 2006") (hình như là theo quy định của Golang :v)
 
@@ -30,12 +30,12 @@ Về cơ bản, chúng ta host blog lên github sẽ tạo 2 repository
 - Add nội dung bài post dưới phần toml header
 - Chạy trên local host để check:   <br/>
   `hugo server -w (--watch)`
-- Deploy qua `1612198.github.io` để nó render lên web   <br/>
+- Deploy qua `hieudoan7.github.io` để nó render lên web   <br/>
   ```bash
-  hugo -d (--deploy) ../1612198.github.io/
+  hugo -d (--deploy) ../hieudoan7.github.io/
   ```
 - Push 2 repo lên github để host là được.   <br/>
-  `git config --global user.name "1612198`  <br/>
+  `git config --global user.name "hieudoan7`  <br/>
   `git config --global user.gmail "hieudoan190598@gmail.com"`                <br/>
   `git config --list`                         <br/>
   Vào từng cái repo (trong 2 repo đã có file .git rồi nên ko cần dùng `git remote`)     <br/>
