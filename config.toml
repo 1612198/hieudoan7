@@ -54,12 +54,12 @@ disqusShortname = "hieudoan7"
     name = "Gitlab"
     icon = "fab fa-gitlab"
     weight = 2
-    url = "https://gitlab.com/johndoe/"
+    url = "https://gitlab.com/hieudoan190598"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter"
     weight = 3
-    url = "https://twitter.com/johndoe/"
+    url = "https://twitter.com/Cristia45971976"
 [[params.social]]
     name = "LinkedIn"
     icon = "fab fa-linkedin"
