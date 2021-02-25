@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2021-02-25T09:50:59+07:00
-title = "[Linux] useful command"
+title = "[Linux] Useful Commands"
 description = ""
 slug = "" 
 tags = []

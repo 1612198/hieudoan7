@@ -77,55 +77,26 @@ disqusShortname = "1612198"
         languagename = "English"
 
         [[languages.en.menu.main]]
-        name = "About"
+        name = "Algorithms"
         weight = 1
-        url = "/about/"
+        url = "/algos/"
 
         [[languages.en.menu.main]]
-        name = "Blog"
+        name = "Backend Career"
         weight = 2
-        url = "/posts/"
+        url = "/be/"
 
         [[languages.en.menu.main]]
-        name = "Projects"
+        name = "Interview"
         weight = 3
-        url = "/projects/"
+        url = "/interview/"
 
         [[languages.en.menu.main]]
-        name = "Contact me"
+        name = "Others"
+        weight = 4
+        url = "/others/"
+
+        [[languages.en.menu.main]]
+        name = "About"
         weight = 5
-        url = "/contact/"
-
-
-    [languages.pt-br]
-        languagename = "Português"
-        title = "João Ninguém"
-
-        [languages.pt-br.params]
-            author = "João Ninguém"
-            info = "Full Stack DevOps e Mágico"
-            description = "Sítio pessoal de João Ninguém"
-            keywords = "blog,desenvolvedor,pessoal"
-            footercontent = "Coloque algum texto aqui."
-
-        [languages.pt-br.menu]
-
-            [[languages.pt-br.menu.main]]
-            name = "Sobre"
-            weight = 1
-            url = "/pt-br/about/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Blog"
-            weight = 2
-            url = "/pt-br/posts/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Projetos"
-            weight = 3
-            url = "/pt-br/projects/"
-
-            [[languages.pt-br.menu.main]]
-            name = "Contato"
-            weight = 5
-            url = "/pt-br/contact/"
+        url = "/about/"
