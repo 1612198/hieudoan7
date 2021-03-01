@@ -102,3 +102,7 @@ sed -i 's/original/new/g' file.txt
 `s`: substitute command  
 `g`: global (ie: replace all and not just the firse occurence)  
 
+- insert text in b.txt into a.txt at line 5 (-i to save back to orginal a.txt)
+```
+sed -i '5r ~/path_to_b.txt' a.txt
+```
