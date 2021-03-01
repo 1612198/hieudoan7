@@ -52,7 +52,7 @@ void build(int node, int st, int en) {
 //2. Hàm get giá trị từ range [L..R]
 int get(int node, int st, int en, int L, int R){
     // Nếu node hiện hành chưa update thì update đi rồi tính tiếp
-    if (!Lazy[node]){
+    if (Lazy[node]){
         Tree[node] += (en - st + 1)*Lazy[node];
         if (st != en) {
             Lazy[2*node] += Lazy[node];
@@ -70,7 +70,7 @@ int get(int node, int st, int en, int L, int R){
 }
 //3. Hàm update giá trị từ range [L..R] với value v
 void update(int node, int st, int en, int L, int R, int v){
-    if (!Lazy[node]) {
+    if (Lazy[node]) {
         Tree[node] += (en - st + 1)*Lazy[node];
         if (st != en) {
             Lazy[2*node] += Lazy[node];
