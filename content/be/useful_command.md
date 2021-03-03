@@ -106,3 +106,9 @@ sed -i 's/original/new/g' file.txt
 ```
 sed -i '5r ~/path_to_b.txt' a.txt
 ```
+
+## V. stat 
+- show statistics of a file or folder (size, permission, ...)
+```
+$ stat file.txt
+```
