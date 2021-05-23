@@ -20,7 +20,7 @@ Kí pháp Balan là một dạng viết khác của biểu thức toán học.
 - Balan ngược: Đưa các toán tử ra sau cùng  
   
 **Trong kí pháp Balan, các dấu ngoặc bị lược bỏ**  
-Ví dụ: Xét biểu thức: $3 + 5*(6-3) + 1$  
+Ví dụ: Xét biểu thức: $3 + 5\*(6-3) + 1$  
 
 - Balan: $ + + 3 * 5 - 6\ 3\ 1$  
 - Balan ngược:  $3\ 5\ 6\ 3 - * + 1 +$  

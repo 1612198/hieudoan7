@@ -17,16 +17,14 @@ Hàm sinh là cái hàm mà nén 1 dãy số $\\{a_n\\}, n\geq 0$ có quy luật
  Hệ số của $x^n$ chính là số hạng $a_n$ trong dãy $\\{a_n\\}, n\geq 0$.   
 
 ## II. Several Formulas Generating Function
-<center>
 ![fomulas_generating_func](/imgs/fomulas_generating_func.jpg)
-</center>
+
+hd7
 
 ## III. Solving Recursive Sequence.
 Examples:
-<center>
-    ![exam1](/imgs/exam1.jpg)
-    ![exam2](/imgs/exam2.jpg)
-</center>
+![exam1](/imgs/exam1.jpg)
+![exam2](/imgs/exam2.jpg)
 
 This example is my friend 's question in his interview, so I just note it.
 Ngoài ra còn có hàm sinh mũ cũng giải các hệ thức đệ quy phức tạp hơn.
