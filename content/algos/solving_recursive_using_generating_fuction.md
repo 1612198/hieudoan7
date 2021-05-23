@@ -17,9 +17,8 @@ Hàm sinh là cái hàm mà nén 1 dãy số $\\{a_n\\}, n\geq 0$ có quy luật
  Hệ số của $x^n$ chính là số hạng $a_n$ trong dãy $\\{a_n\\}, n\geq 0$.   
 
 ## II. Several Formulas Generating Function
-![fomulas_generating_func](/imgs/fomulas_generating_func.jpg)
 
-hd7
+![fomulas_generating_func](/imgs/fomulas_generating_func.jpg)
 
 ## III. Solving Recursive Sequence.
 Examples:
