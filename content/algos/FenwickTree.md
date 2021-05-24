@@ -15,9 +15,8 @@ series = []
 ## Định nghĩa:
 Fenwick Tree (Binary Indexed Tree) là một CTDL với n node (n+1 nodes với node gốc bù nhìn) chứa thông tin (thường là tổng cộng dồn) về các phần tử trong đoạn `(i-(i&-i), i]` **(mảng tính từ $1$)**
 
-<p align = "center">
 ![BITSum](/imgs/BITSum.png)
-</p>
+
 * Nhận xét: Cây getSum vs cây Update khác nhau:  
     - in GetSum: `parent(i) = i-(i&-i)`  
     - in Update: `parent(i) = i+(i&-i)`  

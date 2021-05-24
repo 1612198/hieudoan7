@@ -45,9 +45,8 @@ Sở dĩ độ phức tạp còn $O(n)$ vì KMP luôn hướng con trỏ $i$ tro
 
 ***HOW DOES KMP WORK?***  
 Giả sử quá trình đang ở trạng thái:  
-<center>
+
 ![kmp_minhoa.jpg](/imgs/kmp_minhhoa.jpg)
-</center>
 
 Ta gặp mismatch tại vị trí $x$, làm sao để không quay lui con trỏ mà vẫn tìm được các $P$ trong $T$?.  
 
@@ -102,9 +101,9 @@ Nhưng nếu $P[i] != P[lps[i-1]]$ thì sao, thì có nghĩa là tìm chuỗi co
 Có phải là vì $lps[i-1] = len$ nên $P[0:len-1] = P[i-len:i-1]$ cho nên chuỗi $lps[i]$ có thể có là $lps[len-1] + 1$ nếu $P[lps[len-1]] == P[i]$. Cứ như vậy thôi.  
 
 Hình vẽ minh họa:  
-<center>
+
 ![lps_minhhoa](/imgs/lps.jpg)
-</center>
+
 ### 2. KMP Search
 ```cpp
 void KMPSearch(string P, string T){

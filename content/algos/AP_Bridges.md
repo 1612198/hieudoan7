@@ -21,16 +21,14 @@ Ta xét trong undirected graph.
 ## II. Finding Articulation Point
 ### 1. Thuật toán tầm thường
 Với mỗi đỉnh trong graph, ta thử cắt bỏ đi và đếm số thành phần liên thông. Nếu tăng thì đỉnh đó là khớp, ngược lại thì không. Gắn đỉnh đó lại và thử bỏ đỉnh khác cho đến khi ta thử hết các đỉnh của graph.  
-$$ \Rightarrow O(V*O(DFS)) = O(V(V+E))$$
+$$ \Rightarrow O(V\*O(DFS)) = O(V(V+E))$$
 
 ### 2. Thuật toán cải tiến (Tarjan)
 Tận dụng sức mạnh của DFS.  
 Nhắc lại, các loại edges trong 1 tree. 
 
-<center>
-
 ![tree_edges](/imgs/Tree_edges.png)
-</center>
+
 Trong DFS Tree, chỉ có **Back Edges** và **Tree Edges**.  
 
 Xét 1 đỉnh $u$ trong đồ thị:  
@@ -39,10 +37,9 @@ Xét 1 đỉnh $u$ trong đồ thị:
 - Nếu $u$ khác root và **subtree rooted at v** (children of u) **has NOT** back edge to ancestor of u  $\Rightarrow u$ là khớp.  
 
 Minh họa:  
-<center>
 
 ![AP_minhhoa](/imgs/AP_minhhoa.jpg)
-</center>
+
 Nếu không có **back edge** thì khi bỏ $u$ sẽ diconnect graph với subtree rooted at v. $\Rightarrow u$ là khớp.  
 
 ### 3. Implementation
@@ -53,10 +50,8 @@ Làm thế nào để ta biết được 1 đỉnh $u$ có phải là khớp hay
   + $disc[u]$: thời gian khám phá ra đỉnh $u$ (discovery)
   + $low[u]$: $min(disc[u], disc[w])$, trong đó $w$ is ancestor of u and there is a back edge from some descendant of $u$ to $w$. Tức là ta lưu lại số thứ tự của node sớm nhất (có thể = cha $u$ nhưng theo con đường back edge của đám con cháu) mà từ đó có thể đi tới cây con rooted at $u$ (include $u$)  
   > Thì khi $low[v] \geq disc[u]$ chứng tỏ $u$ là AP ($"="$ khi back edge của con $v$ nó trỏ ngay $u$)  
-  <center>
 
 ![lowv_equal_discu](/imgs/lowv_equal_discu.jpg)
-</center>
 
 $\Rightarrow $Code: Tao xin copy nguyên source trên trang [cp-algorithm](https://cp-algorithms.com/graph/cutpoints.html) bởi vì nó code quá tuyệt vời.  
 $tin$ = $disc$ (time into node).  
@@ -95,13 +90,11 @@ void find_cutpoints(){
 }
 ```
 ## III. Finding Bridges
-Hoàn toàn tương tự, chỉ khác ở điều kiện:  
-<center>
+Hoàn toàn tương tự, chỉ khác ở điều kiện:
 $low[v] > disc[u]$ thay vì $low[v] \geq disc[u]$ và không có chuyện trùng nhau.
 ```cpp
 bridge.push_back({a, b}); //ko co trung
 ```
-</center>
 
 ### IV. Tham khảo
 - competive programming 3 (Steven Halim)

@@ -46,5 +46,5 @@ If the original graph is undirected then all of its edges are **tree edge** or *
 **Intuition Explaination:**
 ![intuition_expanation](/imgs/intuition_explanation.jpg#center)
 
-Goodbye, any comment is appreciated for me.
+Goodbye, any comments would be highly appreciated.
 

@@ -27,9 +27,7 @@ Tại sao lại $4n$?
 - $Node[4]$: ...  
 
 Xét ví dụ minh họa sau sẽ rõ.
-<p align="center">
-<img src="/imgs/segment.jpg">
-</p>
+![segment.jpg](/imgs/segment.jpg)
 Tree phải có $size = 4n$ vì như ta thấy với $n = 6$, thì nó cần tới node $13$ để quản lý tức $Tree[13]$ vì vậy $2n$ sẽ không đủ, mặc dù node $10$, $11$ (Tức $Tree[10]$, $Tree[11]$) chỉ là những dummy node. Có nghĩa là segment tree sẽ là $1$ cây nhị phân không đầy đủ, và để thêm đầy đủ thì tổng số node của nó sẽ là $T$.  
 $$ T = 2^0 + 2^1 + 2^2 + ... + 2^m$$ với $ m = ceil\\{log_2(n)\\} \leq log_2(n) + 1$
 $$\Rightarrow T = 2^0 + 2^1 + ... + 2^{log_2(n)+1} = 2^{log_2(n)+2}-1 \leq 4n $$

@@ -34,8 +34,6 @@ Hàm $Z$ của xâu $S$ là dãy $z[0], z[1], ..., z[n-1]$ trong đó $z[i]$ là
 Ví dụ: Xét xâu $S = 'abaabab'$ (length = 7)  
 Ta sẽ có được hàm z
 
-<center>
-
  i | 2 xâu cần so sánh | z[i] 
 ---|-------------------|------
  0 | quy ước = 0       |  0   
@@ -46,7 +44,6 @@ Ta sẽ có được hàm z
  5 | 'abaabab' vs 'ab'     | 2
  6 | 'abaabab' vs 'b'      | 0
 
-</center>
 Sau khi có được hàm Z của xâu  S, thì với $z[k] = x$ cho ta biết: 
 
 - $x$ kí tự đầu của $S$ sẽ xuất hiện lại ở vị trí $k$
@@ -74,7 +71,7 @@ Từ thằng $right\\_most$ ta sẽ xác định được điểm xuất phát c
 
 Có phải là đoạn $s[i..right\\_most]$ nó hoàn toàn giống với đoạn $s[i-left..k-1]$ vì $z[left]
 = k$. Vì vậy ta sẽ tận dụng việc đoạn này đã được so sánh prefix với $s$ trước đó thông qua việc đi tính $z[i-left]$ trước đó.  
- 
+
 Đọc code sẽ rõ, nếu may mắn full cây (trùng cả đoạn) thì tăng lên so sánh tiếp, không thì được 1 khúc trùng với $z[i-left]$.  
 
 ```cpp
@@ -88,6 +85,5 @@ for(int i=1; i<=n; i++){
     }
 }
 ```
-$ \Rightarrow O(n)$
-
+$ \Rightarrow O(n)$  
 I think this is good link for you to discover Z-function: https://cp-algorithms.com/string/z-function.html

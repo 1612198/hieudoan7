@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2019-10-29T23:11:03+07:00
-title = "[INTERVIEW] Operator System"
+title = "Operator System"
 description = ""
 slug = "" 
 tags = []
@@ -52,9 +52,7 @@ User space: các ứng dụng người dùng load lên đó chạy, thực ra ch
 
 ## II. Memory
 Coi cái sơ đồ hoạt động sau đây.
-<center>
 ![virtual_memory](/imgs/virtual_memory.jpg)
-</center>
 
 Các vấn đề xoay quanh.  
 #### 1. Virtual Memory có kích thước bao nhiêu?
@@ -73,9 +71,7 @@ Kì thực, nó không hề tồn tại, nên không có lưu ở đâu hết.
 Page Table nó được lưu trong 1 thiết bị phần cứng **MMU** (Memory Management Unit) tích hợp trong CPU. MMU luôn đi kèm với **TLB** (Translation Lookaside Buffer, nhiệm vụ catching).  
 ![minh_hoa](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/MMU_principle_updated.png/1024px-MMU_principle_updated.png)
 Sơ đồ hoạt động của TLB.  
-<center> 
 ![hoad_dong_TLB](https://upload.wikimedia.org/wikipedia/commons/c/c1/Steps_In_a_Translation_Lookaside_Buffer.png)
-</center>
 
 #### 5. Làm gì khi xảy ra page fault?
 Khi mà search trong page table thấy bit invalid, nghĩa là chưa được load lên RAM, thì nó phát sinh Trap (ngắt mềm) cho OS, hệ điều hành mới block tiến trình lại và tiến hành đi load ô nhớ đang cần từ disk lên RAM để tiếp tục chạy. Tiến hành các bước sau:  
@@ -98,7 +94,5 @@ Có, `swap_info_struct()` trong kernel á, nếu muốn rõ hơn thì tải code
 
 #### 8. Một tiến trình chạy như thế nào?
 Nó load hết lên Virtual Memory, đây chỉ là mang tính conceptional chứ làm gì tồn tại virtual memory, nghĩa là nó load từng ô nhớ thôi, chạy cần cái nào nó load cái đó nhờ `swap_info_struct()` trong OS.  
-<center>
 ![swap](/imgs/swap.jpg)
-</center>
 Thế nhiều tiến trình chạy như thế nào, thì nó cứ load hết lên virtual memory theo thứ tự từng tiến trình, vì VM ko tồn tại dẫn đến thực tế là cứ tiến trình nào cần ô nhớ nào thì nó ms load lên RAM thôi.  

@@ -108,11 +108,11 @@ for(int i=0; i<n; i++){
 ## III. Why BFS & DSF has complexity $O(V+E)$?
 Vì ta lưu đồ thị ở dạng **adjacent list**.  
 Mỗi thao tác duyệt qua cạnh và đỉnh là $O(1)$.  
-$O(V+E)$ thực chất là cộng vật lý luôn á. Nhưng mà trong asymtomic complexity người ta nói $O(x+y) = O(max(x,y))$ vì $O(x+y) \leq O(2*max(x,y)) = O(max(x,y))$ ta bỏ đi hằng số $2$ as usual.  
-Xét đồ thị:
-<center>
+$O(V+E)$ thực chất là cộng vật lý luôn á. Nhưng mà trong asymtomic complexity người ta nói $O(x+y) = O(max(x,y))$ vì $O(x+y) \leq O(2\*max(x,y)) = O(max(x,y))$ ta bỏ đi hằng số $2$ as usual.  
+Xét đồ thị:  
+
 ![dfs](/imgs/dfs.jpg)
-</center>
+
 Khi lưu trong máy tính sẽ là mảng $g$ các vector.  
 ```
 g[1] = {2, 4}  

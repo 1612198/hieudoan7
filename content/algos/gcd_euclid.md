@@ -23,15 +23,15 @@ ll gcd (ll a, ll b){
 ## II. Interpretation
 Thuật toán Euclid tìm ước chung lớn nhất giữa 2 số $a, b$.  
 Không mất tính tổng quát, giả sử $a > b$.  
-<center>
-    ![gcd_euclid](/imgs/gcd_euclid.jpg)
-</center>
+![gcd_euclid](/imgs/gcd_euclid.jpg)
 
 Nhìn hình, ta thấy, $gcd(a, b) = x$ khi và chỉ khi $x$ là ước của $a$, $x$ cũng là ước của $b$ và $x$ lớn nhất.  
 
-Mà $$\begin{cases}a = n*b + ( a\ \%\ b) \\\a\ \%\ x = 0 \\\ b\ \%\ x = 0 \Rightarrow n*b\ \%\ x = 0 \end{cases}$$
-Nên  $$ (a\ \%\ b)\ \%\ x = 0$$.  
-Suy ra:  $$gcd(a, b) = gcd(b, a\%b)$$ 
+Mà 
+$$\begin{cases}a = nb + (a \\% b) \\\a \\% x = 0 \\ \wedge b \\% x = 0 \Rightarrow nb \\% x = 0 \end{cases}$$  
+
+Nên  $$ (a\\%b)\ \\%x = 0$$.  
+Suy ra:  $$gcd(a, b) = gcd(b, a\\% b)$$ 
 $$(=x)$$  
 
 ***Corner Case***  (final recurrence)    
