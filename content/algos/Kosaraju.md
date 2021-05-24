@@ -23,14 +23,10 @@ Tất cả các cạnh của đồ thị gốc sẽ được chia làm 4 loại 
 * Back Edge
 * Cross Edge
 
-<p align="center">
-<img src="/imgs/Tree_edges.png">
-</p>
+![Tree_edges](/imgs/Tree_edges.png#center)
 
 **Example**
-<p align="center">
-<img src="/imgs/example.jpg">
-</p>
+![example](/imgs/example.jpg)
 
 If the original graph is undirected then all of its edges are **tree edge** or **black edge**
 
@@ -43,14 +39,12 @@ If the original graph is undirected then all of its edges are **tree edge** or *
 * DFS following nodes in the stack S
 
 ### 2. How does it work?
-Ở step 1, nó tạo ra 1 cái order rất đặc biệt có tính chất: A cross edge is never from a lower ordered node to a higher ordered node. (order~num)
+Ở step 1, nó tạo ra 1 cái order rất đặc biệt có tính chất: A cross edge is never from a lower ordered node to a higher ordered node. (order\~num)
 
 [The best video explain ituition Kosaraju's algorithm](https://www.youtube.com/watch?v=RpgcYiky7uw)
 
 **Intuition Explaination:**
-<p align="center">
-<img src="/imgs/intuition explanation.jpg">
-</p>
+![intuition_expanation](/imgs/intuition_explanation.jpg#center)
 
 Goodbye, any comment is appreciated for me.
 
