@@ -1,7 +1,7 @@
 +++ 
 draft = false
 date = 2019-10-28T21:27:43+07:00
-title = "[INTERVIEW] Computer Network"
+title = "Computer Network"
 description = ""
 slug = "" 
 tags = []
