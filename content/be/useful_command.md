@@ -112,3 +112,14 @@ sed -i '5r ~/path_to_b.txt' a.txt
 ```
 $ stat file.txt
 ```
+
+## VI. awk (Aho, Weinberger, and Kernighan)
+```
+$ cat file.txt | grep "pattern" | awk '{print $1 $2}'
+```
+
+## VII. xargs (eXtended ARGuments)
+Read streams of data from standard input, then generate and executes command line, meaning it can take output of a command and passes it as argument of another command. If no command is speicified, xargs executes echo by default.
+```
+$ ps -ef | grep "pattern" | awk '{print $2}' | xargs kill -9
+```
