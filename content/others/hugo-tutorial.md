@@ -23,28 +23,34 @@ Về cơ bản, chúng ta host blog lên github sẽ tạo 2 repository
   
 ## II. Post & Deploy
 - Tạo post <br/>
-  `hugo new posts/mypost.md`
-- Chỉnh sửa config toml file `mypost.md`
+  `hugo new posts/mypost.md`  
+- Chỉnh sửa config toml file `mypost.md`  
     + draft = "false"
     + title = "My Title post"
-- Add nội dung bài post dưới phần toml header
-- Chạy trên local host để check:   <br/>
+- Add nội dung bài post dưới phần toml header  
+- Chạy trên local host để check:  
   `hugo server -w (--watch)`
-- Deploy qua `hieudoan7.github.io` để nó render lên web   <br/>
+- Deploy qua `hieudoan7.github.io` để nó render lên web  
   ```bash
   hugo -d (--deploy) ../hieudoan7.github.io/
   ```
-- Push 2 repo lên github để host là được.   <br/>
-  `git config --global user.name "hieudoan7`  <br/>
-  `git config --global user.gmail "hieudoan190598@gmail.com"`                <br/>
-  `git config --list`                         <br/>
-  Vào từng cái repo (trong 2 repo đã có file .git rồi nên ko cần dùng `git remote`)     <br/>
-  `git add .`           <br/>
-  `git commit -m "comment for your commit"`     <br/>
-  `git push origin master`
+- Push 2 repo lên github để host là được.  
+  `git config --global user.name "hieudoan7`  
+  `git config --global user.gmail "hieudoan190598@gmail.com"`  
+  `git config --list`  
+  Vào từng cái repo (trong 2 repo đã có file .git rồi nên ko cần dùng `git remote`)  
+  `git add .`  
+  `git commit -m "comment for your commit"`  
+  `git push origin master`  
 
 ## III. Add comment componet
+
 [awesome guide](https://portfolio.peter-baumgartner.net/2017/09/10/how-to-install-disqus-on-hugo/) 
+
+First, Every article use the single.html template to render page, so in order to add any components or header/footer or everything related to page view, you need to modify the `single.html` file which is located in `themes/hugo-coder/layout/_default/single.html`, notice that every other `single.html` will not be accepted.
+
+Second, you create a `disqus.html` file in `partials` folder which is basically a template for comment section and then attach it to the above `single.html` using valid syntax such as existing file.
+
 ## IV. Hugo Tips
 ### 1. Insert Image in Hugo post
 - Bỏ image vào folder static (cùng `config.toml`)
